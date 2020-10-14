@@ -1,0 +1,56 @@
+.Post {
+    padding: 7px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 4fr 2fr;
+    height: 90vh;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 0 7px 7px rgb(22, 16, 16);
+    background-color: rgb(65, 34, 34);
+    color: white ;
+}
+#title {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 7px solid rgb(180, 180, 180);
+}
+#content {
+    display: flex;
+    font-size: 12px
+}
+#image {
+    max-width: 30%;
+}
+#description {
+    padding-left: 20px;
+}
+#comments {
+    min-height: 200px;
+    margin: 20px 5px 0 5px;
+    overflow-y: scroll;
+    border: 2px solid rgb(5, 5, 5);
+    box-shadow: -5px 5px 1px 0 rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+#comment {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 6px 0 #616161;
+    margin: 15px 8px;
+    padding: 5px;
+    background-color: rgba(83, 55, 55, 0.589);
+    color: black;
+}
+#commentContent {
+    height: 80%;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+#commentName {
+    height: 20%;
+    font-size: 13px;
+    opacity: 0.8;
+    border-top: 2px solid rgb(105, 105, 105);
+}
