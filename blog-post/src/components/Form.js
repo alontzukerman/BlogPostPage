@@ -1,5 +1,5 @@
 import React , { useEffect , useRef } from 'react'
-import './Form.css';
+import '../styling/Form.css';
 
 
 function Form({submitComment}) {
@@ -15,6 +15,16 @@ function Form({submitComment}) {
     function contentKeyDowm(e) {
         if(e.keyCode === 13)
             submitRef.current.focus();
+    }
+    function handleSubmit() {
+        let newComment = {
+            name: nameRef.current.value,
+            content: contentRef.current.value
+        };
+        contentRef.current.value = '';
+        submitComment(newComment);
+        contentRef.current.focus();
+
     }
     function submitKeyDowm(e) {
         console.log(e.keyCode);
@@ -34,7 +44,7 @@ function Form({submitComment}) {
             <div id="formTitle">LEAVE YOUR COMMENT HERE</div>
             <input id="nameInput" onKeyDown={nameKeyDowm} ref={nameRef} placeholder="Name"></input>
             <input id="contentInput" onKeyDown={contentKeyDowm} ref={contentRef} placeholder="content"></input>
-            <button id="submitButton" onKeyDown={submitKeyDowm} ref={submitRef}>Submit</button>
+            <button id="submitButton" onClick={()=>handleSubmit()} onKeyDown={submitKeyDowm} ref={submitRef}>Submit</button>
         </div>
     )
 }

@@ -1,0 +1,38 @@
+.SignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.boxSignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh;
+    box-shadow: 0 0 5px 3px black;
+}
+.signUpTitle {
+    font-size: 6vh;
+    padding-bottom: 1vh;
+    margin-bottom: 1vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 3px solid rgb(141, 90, 90);
+}
+.signUpButton {
+    font-family: 'Roboto Mono', monospace;
+    border: 0;
+    height: 7vh ;
+    width: 25vw ;
+    font-size: 2.5vh;
+    font-weight: bold;
+    background-color: #fff;
+
+}
+
+.signUpButton:hover {
+    background-color: #333;
+    color: white ;
+}

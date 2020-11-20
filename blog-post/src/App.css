@@ -1,9 +1,9 @@
 .App {
   font-family: 'Roboto Mono', monospace;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   background-color: rosybrown;
 }
@@ -22,4 +22,45 @@
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #222222; 
+}
+
+#forms {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  align-items: center;
+  justify-content: flex-start;
+}
+#toggle {
+  display: flex;
+  margin: 2vh;
+  margin-bottom: 4vh;
+}
+.toggleButton {
+  font-family: 'Roboto Mono', monospace;
+  border: 0 ;
+  height: 5vh;
+  width: 25vw;
+  font-size: 2vh;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+input {
+  font-family: 'Roboto Mono', monospace;
+  height: 4vh;
+  width: 100%;
+  margin: 1vh;
+  padding: 1vh 2vh ;
+  border: 0;
+  background-color: rgb(235, 182, 182);
+  font-size: medium;
+  font-weight: bold;
+}
+.error {
+  color: rgb(117, 3, 3);
+  font-size: small;
+  font-weight: bolder;
+  height: 5vh;
 }
